@@ -15,7 +15,7 @@ body {
     justify-content: space-evenly;
     overflow: hidden;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: reverse;
 }
 
 .message {
@@ -33,14 +33,38 @@ h1 {
     margin: 50px;
 }
 
-@media screen and (max-width: 250px) {
+@media screen and (max-width: 500px) {
     h1 {
-        font-size: 25px;
+        font-size: 30px;
+    }
+    .container {
+        flex-direction: column-reverse;
+    }
+    body {
+        padding: 8px;
     }
 }
 
-@media screen and (min-width: 250px) and (max-width: 500px) {
+@media screen and (min-width: 500px) and (max-width: 800px) {
     h1 {
         font-size: 35px;
+    }
+    .container {
+        flex-direction: column-reverse;
+    }
+    body {
+        padding: 50px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+    h1 {
+        font-size: 45px;
+    }
+    .container {
+        flex-direction: column-reverse;
+    }
+    body {
+        padding: 75px;
     }
 }
