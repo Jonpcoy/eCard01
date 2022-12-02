@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Congratulations</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            setInterval(
+            function () {
+            var randomColor = Math.floor(Math.random()*16777215).toString(16);
+            document.body.style.backgroundColor = "#"+randomColor;
+                },1500);
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="balloon">
+                <img src="balloon06.gif" alt="balloon" width="300px">
+            </div>
+            <div class="inner">
+                <h1>Congratulations</h1>
+                <p>Insert message here</p>
+            </div>
+            <div class="balloon">
+                <img src="balloon06.gif" alt="balloon" width="300px">
+            </div>
+        </div>
+    </body>
+</html>
